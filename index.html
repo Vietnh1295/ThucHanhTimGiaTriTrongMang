@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x=0;
+    var array=new Array();
+    var Num=parseInt(prompt('Nhập số phần tử trong mảng',0));
+    var count=0;
+    var res='';
+    var CoGiaTri=true;
+    while (Num<=0)
+    {
+        Num=parseInt(prompt('Mời nhập lại số phần tử trong mảng',0));
+    }
+    while (count!=Num)
+    {
+        array[x]=prompt('Nhập số nhần tử tứ '+(x+1));
+        x++;
+        count++;
+    }
+    alert(array);
+var value=parseInt(prompt('Nhập số phần tử cần tìm'))
+    for(var i=0;i<array.length;i++)
+    {
+        if(value==array[i])
+        {
+            CoGiaTri=true;
+           res+=' '+ (i+1);
+        }
+        else
+            {
+                CoGiaTri=false;
+            }
+
+    }
+    if(CoGiaTri)
+    {
+        alert('Số cần tìm '+ value +' ở vị trị'+res);
+    }
+    else
+        {
+            alert('Không có giá trị cần tìm')
+        }
+
+</script>
+</body>
+</html>
